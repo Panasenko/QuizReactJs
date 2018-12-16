@@ -1,4 +1,7 @@
 {
     "mos.port": "",
-    "npm-scripts.showStartNotification": false
+    "npm-scripts.showStartNotification": false,
+    "cSpell.words": [
+        "select"
+    ]
 }
