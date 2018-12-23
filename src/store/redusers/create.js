@@ -1,3 +1,21 @@
-/**
- * Created by admin on 23.12.2018.
- */
+import {CREATE_QUIZ_QUESTION, RESETE_QUIZ_CREATION} from "../actions/actionTypes"
+const initialState = {
+    quiz: []
+}
+
+export default function createReduser(state = initialState, action) {
+    switch (action.type) {
+        case CREATE_QUIZ_QUESTION:
+            return {
+                ...state,
+                quiz: [...state.quiz, action.item]
+            }
+        case RESETE_QUIZ_CREATION:
+            return {
+                ...state,
+                quiz: []
+            }
+        default:
+            return state
+    }
+}
